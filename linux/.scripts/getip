@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+html_content=$(curl -sL http://www.get-ip.me)
+# echo $html_content
+echo $html_content|sed -n 's|.*IP address is:</p><h2>\([0-9]*\.[0-9]*\.[0-9]*\.[0-9]*\).*|\1|p'

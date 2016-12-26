@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+ssh liupengcheng@lg-hadoop-build03.bj
